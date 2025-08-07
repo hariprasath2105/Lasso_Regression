@@ -18,8 +18,6 @@ This project demonstrates how to use **Lasso Regression** to predict business re
 
 ## 📁 Project Structure
 
-
-
 ```
 📁 ad_spend_optimization_lasso/
 ├── ad_spend_dataset.csv 
@@ -48,7 +46,7 @@ python model.py
 python app.py
 ```
 
-Then visit: [http://127.0.0.1:7860]
+Then visit: [http://127.0.0.1:7860](http://127.0.0.1:7860)
 
 ---
 
@@ -66,7 +64,7 @@ Then visit: [http://127.0.0.1:7860]
 
 ## 🙋‍♂️ Author
 
-**Hari Prasath **  
+**Hari Prasath**  
 [GitHub Profile](https://github.com/hariprasath2105)
 
 ---
