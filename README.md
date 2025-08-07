@@ -1,100 +1,72 @@
+# 📊 Ad Spend Optimization using Lasso Regression (Gradio App)
 
-# 🌸 Iris Flower Species Predictor (Naive Bayes + Flask)
-
-This is a simple Flask web application that uses a **Naive Bayes classifier** to predict the species of an Iris flower based on **only two inputs**: Petal Length and Petal Width.
+This project demonstrates how to use **Lasso Regression** to predict business revenue based on advertising spend across multiple channels (TV, Radio, Social Media). The final app is built and deployed using **Gradio** with a clean UI.
 
 ---
 
-## 🧠 Overview
+## 🚀 Model Info
 
-The app is built using:
-- **Python**
-- **Flask** (for the backend)
-- **HTML/CSS** (for a simple UI)
-- **scikit-learn** (for machine learning)
-
-The model was trained on the classic **Iris dataset** using only the most informative features: `PetalLength` and `PetalWidth`.
+- **Algorithm**: Lasso Regression  
+- **Use Case**: Ad Spend Optimization / Marketing ROI  
+- **Input Features**:
+  - TV Ad Spend
+  - Radio Ad Spend
+  - Social Media Spend
+- **Target Variable**: Revenue (in dollars)
 
 ---
 
 ## 📁 Project Structure
 
+
+
 ```
-iris-naivebayes-app/
-│
-├── model.py               # Trains and saves the model and label encoder
-├── iris.data              # Raw dataset
-├── model.pkl              # Trained Naive Bayes model
-├── label_encoder.pkl      # LabelEncoder to decode predictions
-├── app.py                 # Flask app
-├── templates/
-│   └── index.html         # Web interface
-├── static/
-│   └── style.css          # Gradient-styled UI
-└── README.md              # This file
+📁 ad_spend_optimization_lasso/
+├── ad_spend_dataset.csv 
+├── train_model.py 
+├── lasso_model.pkl 
+├── scaler.pkl
+└── app_gradio.py 
 ```
-
----
-
-## 🚀 How It Works
-
-1. User inputs:
-   - Petal Length (cm)
-   - Petal Width (cm)
-
-2. The Flask backend sends these to the pre-trained model (`model.pkl`)
-3. The model predicts one of:
-   - `Iris-setosa`
-   - `Iris-versicolor`
-   - `Iris-virginica`
-
-4. Result is shown on the webpage.
 
 ---
 
 ## 🔧 Installation
 
-### 1. Clone the Repository
+### 1. Install Dependencies
 ```bash
-git clone https://github.com/your-username/iris-naivebayes-app.git
-cd iris-naivebayes-app
+pip install flask scikit-learn pandas gradio
 ```
 
-### 2. Install Dependencies
-```bash
-pip install flask scikit-learn pandas numpy
-```
-
-### 3. Train the Model (if not already)
+### 2. Train the Model (if not already)
 ```bash
 python model.py
 ```
 
-### 4. Run the Flask App
+### 3. Run the Gradio App
 ```bash
 python app.py
 ```
 
-Then visit: [http://localhost:5000](http://localhost:5000)
+Then visit: [http://127.0.0.1:7860]
 
 ---
 
 ## 🖥️ Sample UI
 
 **Input**:
-- Petal Length: 4.5
-- Petal Width: 1.3
+
+<img width="1332" height="311" alt="image" src="https://github.com/user-attachments/assets/3dad15c1-13c1-49a8-aadb-acf4400788e1" />
 
 **Output**:
-```
-Predicted Species: Iris-versicolor
-```
+
+<img width="1291" height="321" alt="image" src="https://github.com/user-attachments/assets/146c33d1-0af1-4f81-aefd-537af3450a7c" />
 
 ---
 
 ## 🙋‍♂️ Author
 
-**Hari Prasath S**  
+**Hari Prasath **  
 [GitHub Profile](https://github.com/hariprasath2105)
 
 ---
